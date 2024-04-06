@@ -9,9 +9,9 @@ if ($ProfilePath) {
 $MainMenu = {
      Write-Host "_______________ Firefox user.js Installer _______________"
      Write-Host "_______________________ by iggnas _______________________"
-	 Write-Host ""
-	 Write-Host ""
-	 Write-Host ""
+     Write-Host ""
+     Write-Host ""
+     Write-Host ""
      Write-Host "1. Install Narsil user.js"
      Write-Host "2. Install Arkenfox user.js"
      Write-Host "3. Install Betterfox user.js"
