@@ -1,5 +1,5 @@
 # user.js Installer script
-This powershell script installs user.js of your schoice
+This powershell script installs user.js of your choice
 
 # Requirements
 Windows system with working internet connection
