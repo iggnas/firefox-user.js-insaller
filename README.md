@@ -9,5 +9,5 @@ Windows system with working internet connection
 [@arkenfox](https://github.com/arkenfox/user.js/) 
 [@yokoffing](https://github.com/yokoffing/Betterfox) 
 
-# Commiting
+# Committing
 In case anyone has any suggestions, feel free to dm ignnas on discord
