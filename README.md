@@ -1,4 +1,3 @@
-# firefox-user.js-insaller
 <h2> Firefox script that installs userjs of your choice</h2>
 
 
