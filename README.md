@@ -1,5 +1,5 @@
-# Firefox script that installs userjs of your choice</h2><br>
-
+# user.js Installer script
+This powershell script installs user.js configuration file of your schoice
 # Requirements
 Windows system with working internet connection
 
