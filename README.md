@@ -1,7 +1,7 @@
-#Firefox script that installs userjs of your choice</h2><br>
+# Firefox script that installs userjs of your choice</h2><br>
 
-#Requirements
+# Requirements
 Working internet and Windows system
 
-#Credits
+# Credits
 [@HardwareGeiler](https://github.com/HardwareGeiler) 
