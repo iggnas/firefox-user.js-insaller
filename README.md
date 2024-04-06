@@ -5,7 +5,7 @@ This powershell script installs user.js configuration file of your schoice
 Windows system with working internet connection
 
 # Committing
-In case anyone has any suggestions, feel free to dm ignnas on discord
+In case anyone wants to suggest or add something, feel free to dm ignnas on discord or make a pull request 
 
 # Credits
 [@HardwareGeiler](https://github.com/HardwareGeiler) 
