@@ -8,3 +8,6 @@ Windows system with working internet connection
 [@Narsil](https://codeberg.org/Narsil/user.js) 
 [@arkenfox](https://github.com/arkenfox/user.js/) 
 [@yokoffing](https://github.com/yokoffing/Betterfox) 
+
+# Commiting
+In case anyone has any suggestions, feel free to dm ignnas on discord
