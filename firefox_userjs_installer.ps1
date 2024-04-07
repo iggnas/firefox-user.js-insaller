@@ -14,6 +14,7 @@ $UserJsFiles = @{
     '3' = @{ 'url' = 'https://raw.githubusercontent.com/yokoffing/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
     '4' = @{ 'url' = 'https://raw.githubusercontent.com/pyllyukko/user.js/master/user.js'; 'outputFile' = "$ProfilePath\user.js" }
     '5' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/firefox-user.js-insaller/main/NarsilFork.js'; 'outputFile' = "$ProfilePath\user.js" }
+	'6' = @{ 'url' = 'https://raw.githubusercontent.com/HardwareGeiler/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 }
 
 function DownloadUserJs($url, $outputFile) {
@@ -29,17 +30,23 @@ $MainMenu = {
     Clear-Host
     Write-HostCenter '______________ Firefox user.js Installer ______________'
     Write-HostCenter '______________________ by iggnas ______________________'
-    Write-Host "`n`n"
-    Write-HostCenter "[1] Install Narsil user.js        [2] Install Arkenfox user.js"
+    Write-Host "`n`n`n`n`n"
+    Write-Host "[1] Install Narsil"
 	Write-Host "`n"
-    Write-HostCenter "[3] Install Betterfox user.js     [4] Install pyllyukko user.js"
+	Write-Host "[1] Install Arkenfox"
 	Write-Host "`n"
-    Write-HostCenter "[5] Install my fork of Narsil user.js"
+    Write-Host "[3] Install Betterfox"
+	Write-Host "`n"
+	Write-Host "[1] Install pyllyukko"
+	Write-Host "`n"
+    Write-Host "[5] Install my fork of Narsil"
+	Write-Host "`n"
+    Write-Host "[6] Install HardwareGeiler fork of Betterfox"
 }
 
 while ($true) {
     &$MainMenu
-    Write-Host "`n"
+    Write-Host "`n`n`n"
     $Selection = Read-Host "Make a selection"
     
     if ($UserJsFiles.ContainsKey($Selection)) {
