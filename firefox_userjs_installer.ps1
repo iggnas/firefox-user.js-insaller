@@ -3,40 +3,43 @@ $ProfilePath = (Get-ChildItem "$env:APPDATA\Mozilla\Firefox\Profiles" | Where-Ob
 if ($ProfilePath) {
     Write-Host "Firefox profile directory found."
 } else {
-    Write-Host "The default Firefox profile directory was not found."
+    Write-Host "Firefox profile directory was not found."
 }
 
 $MainMenu = {
-     Write-Host "_______________ Firefox user.js Installer _______________"
-     Write-Host "_______________________ by iggnas _______________________"
-     Write-Host ""
-     Write-Host ""
-     Write-Host ""
-     Write-Host "1. Install Narsil user.js"
-     Write-Host "2. Install Arkenfox user.js"
-     Write-Host "3. Install Betterfox user.js"
-     Write-Host "4. Quit"
+    Clear-Host
+    Write-Host "_______________ Firefox user.js Installer _______________"
+    Write-Host "_______________________ by iggnas _______________________"
+    Write-Host "`n"
+    Write-Host "`n"
+    Write-Host "1. Install Narsil user.js"
+    Write-Host "2. Install Arkenfox user.js"
+    Write-Host "3. Install Betterfox user.js"
+    Write-Host "4. Quit"
 }
 
-Do {
-    cls
-    Invoke-Command $MainMenu
+while ($true) {
+    &$MainMenu
     $Selection = Read-Host "Make a selection: "
-    Switch ($Selection) {
+    
+    switch ($Selection) {
         '1' {
             Write-Host "Installing Narsil user.js"
-			Start-Sleep -Seconds 1
-            Invoke-WebRequest "https://raw.githubusercontent.com/iggnas/firefox-user.js-insaller/main/user.js" -OutFile "$ProfilePath\user.js"
+            Start-Sleep -Seconds 1
+            Invoke-WebRequest "https://codeberg.org/Narsil/user.js/raw/branch/main/desktop/user.js" -OutFile "$ProfilePath\user.js"
         }
         '2' {
             Write-Host "Installing Arkenfox user.js"
-			Start-Sleep -Seconds 1
+            Start-Sleep -Seconds 1
             Invoke-WebRequest "https://raw.githubusercontent.com/arkenfox/user.js/master/user.js" -OutFile "$ProfilePath\user.js"
         }
         '3' {
             Write-Host "Installing Betterfox user.js"
-			Start-Sleep -Seconds 1
+            Start-Sleep -Seconds 1
             Invoke-WebRequest "https://raw.githubusercontent.com/yokoffing/Betterfox/main/user.js" -OutFile "$ProfilePath\user.js"
         }
+        '4' {
+            break
+        }
     }
-} while ($Selection -ne '4')
+}
