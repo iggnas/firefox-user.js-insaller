@@ -27,21 +27,21 @@ function DownloadUserJs($url, $outputFile) {
 }
 
 $MainMenu = {
-    Clear-Host
-    Write-HostCenter '______________ Firefox user.js Installer ______________'
-    Write-HostCenter '______________________ by iggnas ______________________'
-    Write-Host "`n`n`n`n`n"
-    Write-Host "[1] Install Narsil"
+	Clear-Host
+	Write-HostCenter '______________ Firefox user.js Installer ______________'
+	Write-HostCenter '______________________ by iggnas ______________________'
+	Write-Host "`n`n`n`n`n"
+	Write-Host "[1] Install Narsil"
 	Write-Host "`n"
 	Write-Host "[1] Install Arkenfox"
 	Write-Host "`n"
-    Write-Host "[3] Install Betterfox"
+	Write-Host "[3] Install Betterfox"
 	Write-Host "`n"
 	Write-Host "[1] Install pyllyukko"
 	Write-Host "`n"
-    Write-Host "[5] Install my fork of Narsil"
+	Write-Host "[5] Install my fork of Narsil"
 	Write-Host "`n"
-    Write-Host "[6] Install HardwareGeiler fork of Betterfox"
+	Write-Host "[6] Install HardwareGeiler fork of Betterfox"
 }
 
 while ($true) {
@@ -50,11 +50,11 @@ while ($true) {
     $Selection = Read-Host "Make a selection"
     
     if ($UserJsFiles.ContainsKey($Selection)) {
-        $userJs = $UserJsFiles[$Selection]
-		Write-Host "`n"
+	$userJs = $UserJsFiles[$Selection]
+	Write-Host "`n"
         Write-Host "Installing $($userJs.url)"
         Start-Sleep -Seconds 1
-        DownloadUserJs $userJs.url $userJs.outputFile
+       	DownloadUserJs $userJs.url $userJs.outputFile
     } else {
         Write-Host "Invalid selection. Please choose a valid option."
     }
