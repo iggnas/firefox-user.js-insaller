@@ -9,3 +9,4 @@ Windows system with working internet connection
 [@Narsil](https://codeberg.org/Narsil/user.js) 
 [@arkenfox](https://github.com/arkenfox/user.js/) 
 [@yokoffing](https://github.com/yokoffing/Betterfox) 
+[@pyllyukko](https://github.com/pyllyukko/user.js/)
