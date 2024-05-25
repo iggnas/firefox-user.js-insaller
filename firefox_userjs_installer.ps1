@@ -9,11 +9,11 @@ if ($ProfilePath) {
 }
 
 $UserJsFiles = @{
-	'1' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/firefox-user.js-insaller/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
+	'1' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'2' = @{ 'url' = 'https://raw.githubusercontent.com/arkenfox/user.js/master/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'3' = @{ 'url' = 'https://raw.githubusercontent.com/yokoffing/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'4' = @{ 'url' = 'https://raw.githubusercontent.com/pyllyukko/user.js/master/user.js'; 'outputFile' = "$ProfilePath\user.js" }
-	'5' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/firefox-user.js-insaller/main/NarsilFork.js'; 'outputFile' = "$ProfilePath\user.js" }
+	'5' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/NarsilFork.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'6' = @{ 'url' = 'https://raw.githubusercontent.com/HardwareGeiler/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 }
 
