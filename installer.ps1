@@ -9,12 +9,13 @@ if ($ProfilePath) {
 }
 
 $UserJsFiles = @{
-	'1' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
+	'1' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/bin/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'2' = @{ 'url' = 'https://raw.githubusercontent.com/arkenfox/user.js/master/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'3' = @{ 'url' = 'https://raw.githubusercontent.com/yokoffing/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'4' = @{ 'url' = 'https://raw.githubusercontent.com/pyllyukko/user.js/master/user.js'; 'outputFile' = "$ProfilePath\user.js" }
-	'5' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/NarsilFork.js'; 'outputFile' = "$ProfilePath\user.js" }
+	'5' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/user.js-installer/main/bin/NarsilFork.js'; 'outputFile' = "$ProfilePath\user.js" }
 	'6' = @{ 'url' = 'https://raw.githubusercontent.com/HardwareGeiler/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
+ 	'7' = @{ 'url' = 'https://raw.githubusercontent.com/iggnas/Betterfox/main/user.js'; 'outputFile' = "$ProfilePath\user.js" }
 }
 
 function DownloadUserJs($url, $outputFile) {
@@ -42,6 +43,8 @@ $MainMenu = {
 	Write-Host "[5] Install my fork of Narsil"
 	Write-Host "`n"
 	Write-Host "[6] Install HardwareGeiler fork of Betterfox"
+ 	Write-Host "`n"
+  	Write-Host "[7] Install my fork of Betterfox"
 }
 
 while ($true) {
