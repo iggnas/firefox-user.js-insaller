@@ -1,8 +1,14 @@
-# user.js Installer script
-This powershell script installs user.js of your choice
+# Description
+This powershell script can install multiple user.js configrations automatically
 
 # Requirements
 Windows system with working internet connection
+
+## Usage
+Open PowerShell as administrator and enter the command below.
+```powershell
+irm "https://raw.githubusercontent.com/iggnas/user.js-installer/main/installer.ps1" | iex
+```
 
 # Credits
 [@HardwareGeiler](https://github.com/HardwareGeiler) 
